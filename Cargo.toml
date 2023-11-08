@@ -1,0 +1,22 @@
+[workspace]
+members = [
+  "factory",
+  "token",
+]
+
+[profile.release]
+codegen-units = 1
+debug = false
+lto = true
+opt-level = "s"
+overflow-checks = true
+panic = "abort"
+
+[profile.sandbox]
+inherits = "release"
+
+[profile.testnet]
+inherits = "release"
+
+[profile.mainnet]
+inherits = "release"

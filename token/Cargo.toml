@@ -1,0 +1,15 @@
+[package]
+edition = "2021"
+name = "token"
+version = "0.1.0"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+near-sdk = "4.0.0"
+
+[features]
+mainnet = []
+sandbox = []
+testnet = []
